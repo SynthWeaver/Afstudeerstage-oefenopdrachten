@@ -7,7 +7,7 @@ using ContosoUniversity.Models;
 
 namespace ContosoUniversity.DAL
 {
-    public class SchoolInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<SchoolContext>{
+    public class SchoolInitializer : System.Data.Entity.DropCreateDatabaseAlways<SchoolContext>{
 
         //Added this to fix Cannot drop database because it is currently in use bug
         //source: https://stackoverflow.com/a/24666167
@@ -20,9 +20,14 @@ namespace ContosoUniversity.DAL
         }
 
         protected override void Seed(SchoolContext context){
+            var teachers = new List<Teacher>{
+                new Teacher{EmailAddress = "tim@tterwijn.nl", FirstMidName = "Tim", LastName = "Terwijn" },
+                new Teacher{EmailAddress = "rik@tterwijn.nl", FirstMidName = "Rik", LastName = "Terwijn" }
+            };
+
             var students = new List<Student>{
-                new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01")},
-                new Student{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2002-09-01")},
+                new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01"), Teachers=teachers},
+                new Student{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2002-09-01"), Teachers=teachers},
                 new Student{FirstMidName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2003-09-01")},
                 new Student{FirstMidName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2002-09-01")},
                 new Student{FirstMidName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2002-09-01")},

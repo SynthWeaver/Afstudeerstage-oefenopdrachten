@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ContosoUniversity.Controllers
 {
-    public class CourseController : Controller
+    public class RoutingController : Controller
     {
         // GET: Course
         public ActionResult Index(string message)

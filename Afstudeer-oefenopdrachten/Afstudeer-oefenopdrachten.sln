@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{F30CB2F5-9426-4DA8-AEF7-1EC8DFDBBED2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTests", "BankTests\BankTests.csproj", "{2F5B21D2-CA31-4FA0-A26B-3B1357D42980}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F30CB2F5-9426-4DA8-AEF7-1EC8DFDBBED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F30CB2F5-9426-4DA8-AEF7-1EC8DFDBBED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F30CB2F5-9426-4DA8-AEF7-1EC8DFDBBED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5B21D2-CA31-4FA0-A26B-3B1357D42980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5B21D2-CA31-4FA0-A26B-3B1357D42980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5B21D2-CA31-4FA0-A26B-3B1357D42980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5B21D2-CA31-4FA0-A26B-3B1357D42980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
